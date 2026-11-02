@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main id="main-doc">
+      <div class="side-nav">
+        <nav id="navbar">
+          <header>
+            <h1>Technical Documentation</h1>
+          </header>
+          <a class="nav-link" href="#what_is_a_website">What is a Website?</a>
+          <a class="nav-link" href="#html_the_bones_of_a_website">HTML: The Bones of a Website</a>
+          <a class="nav-link" href="#css_the_skin_of_a_website">CSS: The Skin of a Website</a>
+          <a class="nav-link" href="#javascript_the_brain_of_a_website">JavaScript: The Brain of a Website</a>
+          <a class="nav-link" href="#Accessibility">Accessibility</a>
+          <a class="nav-link" href="#learn_more">Learn More</a>
+        </nav>
+      </div>
+      <div class="content">
+        <section class="main-section" id="what_is_a_website">
+          <header>
+            <h2>What is a Website?</h2>
+            <p>A website is a collection of web pages that are accessible via the internet.</p>
+            <p>Each page is identified by a unique URL (Uniform Resource Locator).</p>
+          </header>
+        </section>
+        <section class="main-section" id="html_the_bones_of_a_website">
+          <header>
+            <h2>HTML: The Bones of a Website</h2>
+          </header>
+          <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a website.</p>
+          <p>Every website is built using HTML elements, starting with the basic structure of a web page, called the <i>boilerplate</i>. An example boiler plate is below:</p>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section class="main-section" id="css_the_skin_of_a_website">
+          <header>
+            <h2>CSS: The Skin of a Website</h2>
+          </header>
+          <p>CSS (Cascading Style Sheets) is used to describe the presentation of a website. It controls the layout, colors, and fonts of a website.</p>
+          <p>Styles can be defined in various ways, including inline styles, internal style sheets, and external style sheets.</p>
+          <p><i>Inline styles</i> are applied directly to an HTML element using the <code>style</code> attribute. An example is:</p>
+          <pre><code>&lt;h1 style="color: blue;"&gt;This is a heading&lt;/h1&gt;</code></pre>
+          <p><i>Internal style sheets</i> are defined within the <code>&lt;head&gt;</code> section of an HTML document using the <code>&lt;style&gt;</code> tag. An example is:</p>
+          <pre><code>&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: blue;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+          <p><i>External style sheets</i> are separate CSS files that are linked to an HTML document using the <code>&lt;link&gt;</code> tag. An example is:</p>
+          <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css" /&gt;
+&lt;/head&gt;</code></pre>
+          <p>In every case, the syntax of a CSS rule is the same: a selector followed by a declaration block: <code>selector { property: value; }</code></p>
+          <p>CSS is how you create visually engaging websites. Some of the things that you can influence using CSS include:</p>
+          <ul>
+            <li>Layout and positioning of elements</li>
+            <li>Colors and backgrounds</li>
+            <li>Fonts and text formatting</li>
+          </ul>
+        </section>
+        <section class="main-section" id="javascript_the_brain_of_a_website">
+          <header>
+            <h2>JavaScript: The Brain of a Website</h2>
+          </header>
+          <p>JavaScript is a programming language that adds interactivity and dynamic behavior to websites. It allows developers to create engaging user experiences and handle complex functionality.</p>
+          <p>JavaScript can be used to manipulate HTML and CSS, handle user input, and create dynamic content.</p>
+          <p>JavaScript can be included directly in an HTML document using the <code>&lt;script&gt;</code> tag. For example:</p>
+          <pre><code>&lt;script&gt;
+  // JavaScript code goes here
+&lt;/script&gt;</code></pre>
+          <p>JavaScript can also be included as an external file using the <code>&lt;script&gt;</code> tag with the <code>src</code> attribute. For example:</p>
+          <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+          <p>JavaScript is a powerful tool for creating interactive and dynamic websites. Some of the things that you can do with JavaScript include:</p>
+          <ul>
+            <li>Form validation</li>
+            <li>Dynamic content updates</li>
+            <li>Animations and effects</li>
+          </ul>
+        </section>
+        <section class="main-section" id="Accessibility">
+          <header>
+            <h2>Accessibility</h2>
+          </header>
+          <p>Accessibility ensures that websites are usable by people with disabilities.</p>
+          <p>It involves implementing features that make content accessible to users with various impairments.</p>
+        </section>
+        <section class="main-section" id="learn_more">
+          <header>
+            <h2>Learn More</h2>
+          </header>
+          <p>Explore additional resources to deepen your understanding of web development.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.main-section {
+    font-style: normal;
+    margin-left: 100px;
+}
+
+.side-nav {
+    flex: 0 0 220px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+}
